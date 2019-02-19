@@ -1,2 +1,6 @@
 /.import/
 *.import
+/LibMazeCPP-x64-Debug.exp
+/LibMazeCPP-x64-Debug.ilk
+/LibMazeCPP-x64-Debug.lib
+/LibMazeCPP-x64-Debug.pdb
