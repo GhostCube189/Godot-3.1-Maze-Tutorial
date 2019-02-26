@@ -9,7 +9,7 @@
 
 [node name="main" type="Node2D"]
 script = ExtResource( 1 )
-MazeDimensions = Vector2( 7, 5 )
+MazeDimensions = Vector2( 15, 15 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 

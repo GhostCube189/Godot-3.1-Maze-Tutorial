@@ -150,6 +150,7 @@
     <ClCompile Include="GodotLibrary.cpp" />
     <ClCompile Include="MazeGen.cpp" />
     <ClCompile Include="MazeHolder.cpp" />
+    <ClCompile Include="NodeTracker.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Root.cpp" />
     <ClCompile Include="WinScreen.cpp" />
@@ -158,6 +159,7 @@
     <ClInclude Include="Exit.h" />
     <ClInclude Include="MazeGen.h" />
     <ClInclude Include="MazeHolder.h" />
+    <ClInclude Include="NodeTracker.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Root.h" />
     <ClInclude Include="WinScreen.h" />
