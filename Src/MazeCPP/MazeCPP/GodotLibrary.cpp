@@ -1,5 +1,6 @@
 #include "Player.h"
 #include "Root.h"
+#include "MazeHolder.h"
 
 using namespace godot;
 
@@ -15,4 +16,5 @@ extern "C" void GDN_EXPORT godot_nativescript_init(void* handle) {
 	Godot::nativescript_init(handle);
 	register_class<Player>();
 	register_class<Root>();
+	register_class<MazeHolder>();
 }

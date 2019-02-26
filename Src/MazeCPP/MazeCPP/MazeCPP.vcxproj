@@ -147,10 +147,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GodotLibrary.cpp" />
+    <ClCompile Include="MazeGen.cpp" />
+    <ClCompile Include="MazeHolder.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Root.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MazeGen.h" />
+    <ClInclude Include="MazeHolder.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Root.h" />
   </ItemGroup>
