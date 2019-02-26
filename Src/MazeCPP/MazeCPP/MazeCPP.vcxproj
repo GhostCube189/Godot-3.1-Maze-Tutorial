@@ -152,6 +152,7 @@
     <ClCompile Include="MazeHolder.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Root.cpp" />
+    <ClCompile Include="WinScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exit.h" />
@@ -159,6 +160,7 @@
     <ClInclude Include="MazeHolder.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Root.h" />
+    <ClInclude Include="WinScreen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

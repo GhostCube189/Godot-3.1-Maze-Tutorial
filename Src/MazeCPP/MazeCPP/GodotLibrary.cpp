@@ -2,6 +2,7 @@
 #include "Root.h"
 #include "MazeHolder.h"
 #include "Exit.h"
+#include "WinScreen.h"
 
 using namespace godot;
 
@@ -19,4 +20,5 @@ extern "C" void GDN_EXPORT godot_nativescript_init(void* handle) {
 	register_class<Root>();
 	register_class<MazeHolder>();
 	register_class<Exit>();
+	register_class<WinScreen>();
 }

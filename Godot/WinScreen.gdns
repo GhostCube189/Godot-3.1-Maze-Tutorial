@@ -1,0 +1,9 @@
+[gd_resource type="NativeScript" load_steps=2 format=2]
+
+[ext_resource path="res://MazeCPP-debug.gdnlib" type="GDNativeLibrary" id=1]
+
+[resource]
+resource_name = "WinScreen"
+class_name = "WinScreen"
+library = ExtResource( 1 )
+

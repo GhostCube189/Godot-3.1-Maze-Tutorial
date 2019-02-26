@@ -1,25 +1,32 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://black128x128.png" type="Texture" id=1]
-[ext_resource path="res://light-grey128x128.png" type="Texture" id=2]
-[ext_resource path="res://Aileron-Heavy.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://WinScreen.gdns" type="Script" id=2]
+[ext_resource path="res://light-grey128x128.png" type="Texture" id=3]
+[ext_resource path="res://Aileron-Heavy.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://yellow128x128.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 300
-font_data = ExtResource( 3 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 100
+font_data = ExtResource( 4 )
 
 [node name="WinScreen" type="TextureRect"]
 margin_right = 1920.0
 margin_bottom = 1080.0
 texture = ExtResource( 1 )
 stretch_mode = 2
+script = ExtResource( 2 )
 
 [node name="GreyBG" type="TextureRect" parent="."]
 margin_left = 100.0
 margin_top = 100.0
 margin_right = 1820.0
 margin_bottom = 680.0
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 stretch_mode = 2
 __meta__ = {
 "_edit_lock_": true
@@ -34,3 +41,49 @@ text = "You Win!"
 align = 1
 valign = 1
 
+[node name="QuitButton" type="TextureButton" parent="."]
+margin_left = 100.0
+margin_top = 750.0
+margin_right = 700.0
+margin_bottom = 1000.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 1 )
+expand = true
+stretch_mode = 1
+
+[node name="QuitText" type="Label" parent="QuitButton"]
+margin_right = 600.0
+margin_bottom = 250.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.0784314, 0.0784314, 0.623529, 1 )
+text = "Quit"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RestartButton" type="TextureButton" parent="."]
+margin_left = 1220.0
+margin_top = 750.0
+margin_right = 1820.0
+margin_bottom = 1000.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 1 )
+expand = true
+stretch_mode = 1
+
+[node name="RestartText" type="Label" parent="RestartButton"]
+margin_right = 600.0
+margin_bottom = 250.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.0784314, 0.0784314, 0.623529, 1 )
+text = "Restart"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="pressed" from="QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="RestartButton" to="." method="_on_RestartButton_pressed"]
