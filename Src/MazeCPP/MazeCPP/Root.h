@@ -8,6 +8,7 @@
 #include <InputEventKey.hpp>
 #include <SceneTree.hpp>
 #include <GlobalConstants.hpp>
+#include <CanvasItem.hpp>
 
 //Debug includes
 #ifdef _DEBUG
@@ -24,6 +25,7 @@ namespace godot {
 		static Player* pPlayer;
 		static Node2D* pInnerWallContainerNode;
 		static Vector2 mazeDimensions;
+		static CanvasItem* pCanvas;
 
 		Node2D* pExit;
 		Node2D* pOuterWalls;

@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://black128x128.png" type="Texture" id=1]
+[ext_resource path="res://light-grey128x128.png" type="Texture" id=2]
+[ext_resource path="res://Aileron-Heavy.otf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 300
+font_data = ExtResource( 3 )
+
+[node name="WinScreen" type="TextureRect"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 1 )
+stretch_mode = 2
+
+[node name="GreyBG" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 100.0
+margin_right = 1820.0
+margin_bottom = 680.0
+texture = ExtResource( 2 )
+stretch_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="GreyBG"]
+margin_right = 1720.0
+margin_bottom = 580.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "You Win!"
+align = 1
+valign = 1
+

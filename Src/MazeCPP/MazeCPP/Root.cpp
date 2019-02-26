@@ -5,6 +5,7 @@ using namespace godot;
 Player* Root::pPlayer;
 Node2D* Root::pInnerWallContainerNode;
 Vector2 Root::mazeDimensions = Vector2(11, 7);
+CanvasItem* Root::pCanvas;
 
 void Root::_register_methods() {
 	register_method((char*)"_input", &Root::HandleInputEvent);
@@ -62,6 +63,7 @@ void Root::SetMazeDimensions(Vector2 v) {
 void Root::_ready() {
 	const godot::String gsExit = "Exit";
 	const godot::String gsOuterWalls = "OuterWalls";
+	const godot::String gsCanvas = "CanvasLayer";
 	Node* n;
 	godot::String gsName;
 	godot::Array a = get_children();
@@ -73,6 +75,8 @@ void Root::_ready() {
 			pExit = (Node2D*)n;
 		} else if (gsOuterWalls == gsName) {
 			pOuterWalls = (Node2D*)n;
+		} else if (gsCanvas == gsName) {
+			pCanvas = (CanvasItem*)n;
 		}
 	}
 
